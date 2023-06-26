@@ -40,8 +40,8 @@ rocket1 = Player("racket.png", 30, 300, 30, 120, 10)
 rocket2 = Player("racket.png", 530, 300, 30, 120, 10)
 
 font1 = font.SysFont(None, 36)
-lose1 = font.render("Player 1 lose!", True, (180, 0, 0))
-lose2 = font.render("Player 2 lose!", True, (180, 0, 0))
+lose1 = font.render("PLAYER 1 LOSE!", True, (180, 0, 0))
+lose2 = font.render("PLAYER 2 LOSE!", True, (180, 0, 0))
 
 speed_x = 3
 speed_y = 3
