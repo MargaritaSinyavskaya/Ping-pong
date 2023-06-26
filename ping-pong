@@ -35,7 +35,7 @@ window.fill(background)
 game = True
 finish = False
 
-ball = GameSprite("tenis_ball.png", 300, 300, 10, 10, 10)
+ball = GameSprite("tenis_ball.png", 300, 300, 50, 50, 10)
 rocket1 = Player("racket.png", 30, 300, 30, 120, 10)
 rocket2 = Player("racket.png", 530, 300, 30, 120, 10)
 
