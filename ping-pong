@@ -53,14 +53,13 @@ while game:
         if e.type == QUIT:
             game = False
 
-    if finish != True:
-        ball.rect.x += speed_x
-        ball.rect.y += speed_y
-
     if not(finish):
         window.fill(back)
         rocket1.update_left()
         rocket2.update_right()
+
+        ball.rect.x += speed_x
+        ball.rect.y += speed_y
 
         if sprite.collide_rect(rocket1, ball) or sprite.collide_rect(rocket2, ball):
             speed_x *= -1
@@ -69,13 +68,13 @@ while game:
             speed_y *= -1
 
         if ball.rect.x < 0:
-            window.blit(lose1, (200, 200))
             finish = True
+            window.blit(lose1, (200, 200))
             game = False
 
         if ball.rect.x > 600:
-            window.blit(lose2, (200, 200))
             finish = True
+            window.blit(lose2, (200, 200))
             game = False
 
         rocket1.reset()
